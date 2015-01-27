@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="dnbPortal">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BioSim</title>
+<link rel="shortcut icon" href="assets/images/favicon.png" />
+
+<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="assets/css/theme.css" />
+
+<script src="assets/plugins/jquery-1.11.2.min.js"></script>
+<script src="assets/plugins/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="assets/plugins/angularjs/angular.min.js"></script>
+<script src="assets/plugins/angularjs/angular-route.min.js"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/biosim.js"></script>
+
+</head>
+<body>
+
+<div class="container-fluid main_wrapper" ng-controller="maincontroller">
+	
+    <div class="top_wrapper">
+    	<nav class="mainmenu">
+            <ul>
+                <li class="brand">
+                    <img src="assets/images/logo.png" />
+                    <div>School Information Management System</div> 
+                </li>
+                
+                <li><a href="#home"><span class="glyphicon glyphicon-home"></span></a></li>
+                
+                <li>
+                	<a href="#ourservices"><span class="glyphicon glyphicon-info-sign"></span> OUR SERVICES</a>
+                    <ul>
+                    	<li><a href="#home#biosim">THE BIOSIM</a></li>
+                        <li><a href="#purchase#howtopurchase">HOW TO PURCHASE</a></li>
+                        <li><a href="#purchase#aftersalesservice">AFTER SALES SERVICES</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                	<a href="#underdev">SCHOOL RANKING</a>
+                	<ul>
+                    	<li><a href="#underdev">KCPE</a></li>
+                        <li><a href="#underdev">KCSE</a></li>
+                        <li><a href="#underdev">QUALITY INDEX</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                	<a href="#underdev">COUNTRY RANKING</a>
+                	<ul>
+                    	<li><a href="#underdev">KCPE</a></li>
+                        <li><a href="#underdev">KCSE</a></li>
+                        <li><a href="#underdev">QUALITY INDEX</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="#underdev">EVENTS</a></li>
+                
+                <li><a href="#underdev">MARKET PLACE</a></li>
+            </ul>
+        </nav>
+        
+        <div class="mob-mainmenu">
+            
+        	<div class="brand">
+                <img src="assets/images/logo.png" style="display:inline-block; vertical-align:middle" />
+                <div style="display:inline-block; vertical-align:middle">School Management<br>Information System</div> 
+            </div>
+            
+            <a href="#home"><img src="assets/images/home.png" width="28" style="padding:2px; margin:0 3px;"></a>
+            
+            <span onClick="$(this).parent().find('.mm').slideToggle();"><img src="assets/images/menu.png" width="28" style="padding:2px; margin:0 3px;"></span>
+            
+            <ul class="mm">
+            	<li><a href="#home"><span class="glyphicon glyphicon-home"></span> HOME</a></li>
+            	<li>
+                	<a href="#ourservices"><span class="glyphicon glyphicon-info-sign"></span> OUR SERVICES</a>
+                    <ul>
+                    	<li><a href="#home#biosim">THE BIOSIM</a></li>
+                        <li><a href="#purchase#howtopurchase">HOW TO PURCHASE</a></li>
+                        <li><a href="#purchase#aftersalesservice">AFTER SALES SERVICES</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                	<a href="#underdev">SCHOOL RANKING</a>
+                	<ul>
+                    	<li><a href="#underdev">KCPE</a></li>
+                        <li><a href="#underdev">KCSE</a></li>
+                        <li><a href="#underdev">QUALITY INDEX</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                	<a href="#underdev">COUNTRY RANKING</a>
+                	<ul>
+                    	<li><a href="#underdev">KCPE</a></li>
+                        <li><a href="#underdev">KCSE</a></li>
+                        <li><a href="#underdev">QUALITY INDEX</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="#underdev">EVENTS</a></li>
+                
+                <li><a href="#underdev">MARKET PLACE</a></li>
+            </ul>
+        </div>
+    	
+    </div>
+    
+    <div class="content_wrapper">
+    	<div ng-view></div>
+    </div>
+    
+    <div class="footer_wrapper">
+    	<ul class="sections">
+            <li>
+                <h2 style="margin:0; padding:5px;">Quick Links</h2>
+                <div class="fb"><a href=""><div>Facebook</div></a></div>
+                <div class="tw"><a href=""><div>Twitter</div></a></div>
+            </li>
+            
+            <li>
+            	<h2 style="margin:0; padding:5px;">Our Contacts</h2>
+            	<div style="display:inline-block; vertical-align:top; width:30%; margin:0 5px;">
+                	<h3 style="color:#FFF;">Postal Address</h3>
+                    <p>BioSIM Solutions <br/>P.O Box 5166 – 00100 <br/>Nairobi, Kenya</p>
+                </div>
+                
+                <div style="display:inline-block; vertical-align:top; width:35%; margin:0;">
+                    <h3 style="color:#FFF;">Marketing</h3>
+                    <div>Contact Person: Evans Yegon</div>
+                    <div><span class="glyphicon glyphicon-earphone"></span> +254 724 255 822</div>
+                    <div><span class="glyphicon glyphicon-phone"></span> +254 734 333 266</div>
+                </div>
+                
+            	<div style="display:inline-block; vertical-align:top; width:30%; margin:0 5px;">
+                    <h3 style="color:#FFF;">&nbsp;</h3>
+                    <div><span class="glyphicon glyphicon-envelope"></span> yegon@biosim.co.ke</div>
+                    <div><span class="glyphicon glyphicon-envelope"></span> cananda@biosim.co.ke </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+</div>
+<script>
+	$(window).load(function(){
+		$('.mob-mainmenu ul').hide();
+	});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+	font-family:calibri;
+	src:"fonts/calibri.ttf"
+}
+
+@font-face{
+	font-family:calibrib;
+	src:"fonts/calibrib.ttf"
+}
+
+@font-face{
+	font-family:calibriz;
+	src:"fonts/calibriz.ttf"
+}
+
